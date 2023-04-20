@@ -14,7 +14,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -25,6 +33,37 @@ body {
 .header-main {
     background-color: #FFFFFF;
     color: #000000 ;
+}
+
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    width: 507px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-user {
+    width: 268px;
+    margin-left: auto;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.page-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
 }
 
 .navigation-link {
@@ -44,7 +83,7 @@ body {
     background-color: #756157;
     text-transform: uppercase;
     border-radius: 4px;
-} 
+}
 
 .main-index {
     color: #000000;
@@ -55,6 +94,8 @@ body {
 }
 
 .advantages {
+    margin: 0;
+    padding: 0;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
@@ -73,6 +114,14 @@ body {
     color: #333333;
 }
 
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .advantages-title {
     font-size: 24px;
     line-height: 28px;
@@ -84,20 +133,27 @@ body {
     color: #333333;
 }
 
+.advantages-image {
+    width: 800px;
+}
+
 .advantages-item-bg1 .advantages-specif {
     color: #FFFFFF;
 }
 
 .advantages-item-bg1 {
+    width: 400px;
     background-color: #82B3D3;
     color: #FFFFFF;
 }
 
 .advantages-item-bg2{
+    width: 400px;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item-bg3 {
+    width: 400px;
     background-color: rgba(131, 179, 211, 0.2);;
 }
 
@@ -194,8 +250,8 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #82B3D3;
-    border-radius: 0px 4px 4px 0px;
-    border: 0px;
+    border-radius: 0 4px 4px 0;
+    border: 0;
 }
 
 .footer-page {
@@ -249,7 +305,7 @@ body {
     color: #FFFFFF;
     background-color: #82B3D3;
     border-radius: 4px;
-    border: 0px;
+    border: 0;
 }
 
 .filter-button:nth-child(2n) {
